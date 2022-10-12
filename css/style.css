@@ -24,14 +24,24 @@ h5 {
 a {
     text-decoration: none;
     color: var(--main-color);
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 0.5rem 1rem;
     width: 100%;
+    justify-content: center;
 }
 
-a:focus {
+svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--main-color);
+
+}
+
+a:focus,
+a:focus svg {
     color: white;
-    font-size: 1.01rem;
+    fill: white;
 }
 
 .top-container {
@@ -98,13 +108,14 @@ a:focus {
 
 .user-container>* {
     margin: 0;
+    display: flex;
 }
 
 .separator {
     height: 1px;
     width: 85%;
     background-color: var(--main-color);
-    margin: 1rem auto;
+    margin: .5rem auto;
 }
 
 .sidebar-container span {
@@ -140,10 +151,40 @@ a:focus {
 
 .list-name-playlist {
     list-style: none;
-    height: 200px;
     overflow: auto;
 }
 
-.list-name-playlist li {
-    padding: 0.5rem 0rem;
+li a {
+    padding: .5rem 0rem;
+}
+
+.download {
+    font-size: 0.7rem;
+}
+
+.profile {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile svg {
+    fill: white;
+    width: 100%;
+
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+}
+
+.user a span {
+    color: white;
+    font-weight: bold;
 }

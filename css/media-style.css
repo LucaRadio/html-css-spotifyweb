@@ -21,6 +21,28 @@
 
     .playlist-content {
         display: block;
+
+    }
+
+    a {
+        justify-content: flex-start;
+    }
+
+    .list-name-playlist {
+        height: 300px;
+    }
+
+    svg {
+        display: flex;
+        margin-right: .5rem;
+    }
+
+    .profile svg {
+        margin: 0;
+    }
+
+    .profile {
+        margin-right: .5rem;
     }
 }
 
