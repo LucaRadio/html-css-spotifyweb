@@ -11,6 +11,7 @@
         display: block;
     }
 
+
     .sidebar-container span {
         display: inline-block;
     }
@@ -21,15 +22,10 @@
 
     .playlist-content {
         display: block;
-
     }
 
     a {
         justify-content: flex-start;
-    }
-
-    .list-name-playlist {
-        height: 300px;
     }
 
     svg {

@@ -17,6 +17,8 @@ body {
     color: var(--main-color);
 }
 
+/* SIDEBAR */
+
 h5 {
     color: white;
 }
@@ -53,6 +55,9 @@ a:focus svg {
     flex-shrink: 0;
     height: 80px;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
 .sidebar-container {
@@ -69,10 +74,7 @@ a:focus svg {
     flex-direction: column;
 }
 
-.upgrade-container {
-    flex-shrink: 0;
-    background-color: var(--minor-color);
-}
+
 
 .container {
     flex-grow: 1;
@@ -152,6 +154,7 @@ a:focus svg {
 .list-name-playlist {
     list-style: none;
     overflow: auto;
+
 }
 
 li a {
@@ -187,4 +190,55 @@ li a {
 .user a span {
     color: white;
     font-weight: bold;
+}
+
+/* Sezione upgrade */
+
+.upgrade-container {
+    flex-shrink: 0;
+    background-color: var(--minor-color);
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.upgrade-container button {
+    border: 2px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    background-color: var(--minor-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* Player */
+
+.song-img-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.song-img-container img {
+    height: 50%;
+}
+
+.title {
+    font-weight: bold;
+    color: white;
+}
+
+.left-player-container>* {
+    margin-right: .5rem;
+}
+
+.song-action-container>* {
+    padding: .3rem;
+}
+
+.left-player-container {
+    display: flex;
+    align-items: center;
 }
