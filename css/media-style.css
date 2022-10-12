@@ -1,0 +1,29 @@
+@media screen and (min-width:576px) {
+    .sidebar-container {
+        width: 200px;
+    }
+
+    .logo-container .logo-small {
+        display: none;
+    }
+
+    .logo-container .logo-large {
+        display: block;
+    }
+
+    .sidebar-container span {
+        display: inline-block;
+    }
+
+    .sidebar-container i {
+        display: inline-block;
+    }
+
+    .playlist-content {
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {}
