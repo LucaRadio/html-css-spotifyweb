@@ -460,7 +460,8 @@ li a {
     text-decoration: underline;
 }
 
-.top-player i:hover {
+.top-player i:hover,
+.app-icon i:hover {
     transform: scale(1.2);
 }
 

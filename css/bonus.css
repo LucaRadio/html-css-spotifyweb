@@ -1,0 +1,44 @@
+/* Animazione su navbar interna */
+
+.nav-bar ul li {
+    position: relative;
+}
+
+.nav-bar ul li .animation-item {
+    height: 3px;
+    background-color: greenyellow;
+    width: 100%;
+    margin: auto;
+    visibility: hidden;
+}
+
+.nav-bar ul li:hover .animation-item {
+    visibility: visible;
+    animation-name: hover-underline;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes hover-underline {
+    0% {
+        width: 0%;
+    }
+
+    25% {
+        width: 25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
