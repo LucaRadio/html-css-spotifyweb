@@ -69,6 +69,10 @@
         flex-grow: 1;
         width: auto;
     }
+
+    .app-icon {
+        display: flex;
+    }
 }
 
 @media screen and (min-width:768px) {
