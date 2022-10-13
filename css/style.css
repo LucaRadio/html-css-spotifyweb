@@ -42,10 +42,25 @@ svg {
 
 }
 
+.home a:focus,
+.search a:focus,
+.library a:focus,
+.user-container .download a:focus,
+.user-container .user a:focus {
+    border-left: 2px solid greenyellow;
+}
+
 a:focus,
 a:focus svg {
     color: white;
     fill: white;
+
+}
+
+h2,
+h3 {
+    color: white;
+    margin: 1rem 0rem;
 }
 
 .top-container {
@@ -56,7 +71,7 @@ a:focus svg {
 
 .bottom-container {
     flex-shrink: 0;
-    height: 80px;
+    height: 70px;
     background-color: #282828;
     display: flex;
     justify-content: space-between;
@@ -81,6 +96,7 @@ a:focus svg {
 
 .container {
     flex-grow: 1;
+    background-color: var(--primary-color);
 }
 
 
@@ -250,18 +266,15 @@ li a {
 }
 
 .left-player-container {
-    /* flex-grow: 1; */
     width: calc(100% / 3);
 }
 
 .middle-player-container {
     height: 100%;
     padding-top: 0.5rem;
-    /* flex-grow: 2; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* flex-shrink: 0; */
     width: calc(100% / 3);
 }
 
@@ -269,7 +282,6 @@ li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-grow: 1; */
     flex-direction: column;
     width: calc(100% / 3);
 }
@@ -328,6 +340,10 @@ li a {
     color: white;
 }
 
+.app-icon i {
+    margin-right: 0.5rem;
+}
+
 .volume-bar {
     display: flex;
     width: 70%;
@@ -341,4 +357,66 @@ li a {
     width: 100%;
     background-color: var(--main-color);
     margin-left: .5rem;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    background-color: var(--primary-color);
+}
+
+.container {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 1rem;
+}
+
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-bar ul li a {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 1rem .5rem;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+}
+
+.col {
+    padding: .5rem;
+}
+
+.col-xs-1-2 {
+    width: calc(100%/2);
+}
+
+
+
+.card>* {
+    text-align: center;
+    display: block;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+}
+
+.circled {
+    border-radius: 50%;
 }
