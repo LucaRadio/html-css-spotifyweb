@@ -42,3 +42,48 @@
         width: 100%;
     }
 }
+
+/* VOLUME BAR DISAPPEAR */
+
+.volume-bar .bar {
+    display: none;
+}
+
+label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+label input:checked+.volume-bar-absolute {
+    display: block;
+}
+
+.volume-bar-absolute {
+    position: relative;
+    display: none;
+    height: 25px;
+    background: #3e3e50;
+    width: 15vw;
+    margin-left: 1rem;
+
+}
+
+.bar-container .bar {
+    margin: 0;
+}
+
+.bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.volume-bar-absolute .bar {
+    display: block;
+}

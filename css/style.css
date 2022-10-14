@@ -284,7 +284,7 @@ li a {
 .right-player-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     width: calc(100% / 3);
     overflow: auto;

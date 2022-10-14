@@ -1,3 +1,15 @@
+@media screen and (min-width:568px) {
+
+    .volume-bar .bar {
+        display: block;
+    }
+
+    label input:checked+.volume-bar-absolute {
+        display: none;
+    }
+}
+
+
 @media screen and (min-width:768px) {
 
 
