@@ -49,17 +49,17 @@
     display: none;
 }
 
-label {
+.volume-bar label {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-input {
+.volume-bar input {
     display: none;
 }
 
-label input:checked+.volume-bar-absolute {
+.volume-bar label input:checked+.volume-bar-absolute {
     display: block;
 }
 
@@ -85,5 +85,25 @@ label input:checked+.volume-bar-absolute {
 }
 
 .volume-bar-absolute .bar {
+    display: block;
+}
+
+/* TABS */
+
+#in-evidenza,
+#podcast,
+#classifiche,
+#generi,
+#new,
+#scopri {
+    display: none;
+}
+
+.container #in-evidenza:target,
+.container #podcast:target,
+.container #classifiche:target,
+.container #generi:target,
+.container #new:target,
+.container #scopri:target {
     display: block;
 }
