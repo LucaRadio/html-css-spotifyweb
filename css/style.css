@@ -323,7 +323,7 @@ li a {
 .track-visual {
     background-color: var(--main-color);
     height: 5px;
-    width: 50%;
+    width: 20vw;
     margin: 0rem .5rem;
     border-radius: 25px;
 
@@ -362,7 +362,7 @@ li a {
 
 .bar {
     height: 5px;
-    width: 100%;
+    width: 8vw;
     background-color: var(--main-color);
     margin-left: .5rem;
     border-radius: 25px;
