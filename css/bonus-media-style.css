@@ -1,10 +1,8 @@
 @media screen and (min-width:768px) {
-    .row {
-        overflow: auto;
-    }
+
 
     .col {
-        width: calc(100%/2);
+        min-width: calc(100%/2);
         flex-shrink: 0;
     }
 
@@ -14,6 +12,6 @@
 @media screen and (min-width:992px) {
 
     .col-lg-1-6 {
-        width: calc(100%/6);
+        min-width: calc(100%/6);
     }
 }

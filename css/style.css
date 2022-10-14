@@ -401,9 +401,10 @@ li a {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-left: -.5rem;
     margin-right: -.5rem;
+    overflow: auto;
 }
 
 .col {
