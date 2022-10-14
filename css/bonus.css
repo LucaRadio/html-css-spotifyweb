@@ -1,10 +1,6 @@
 /* Animazione su navbar interna */
 
-.nav-bar ul li {
-    position: relative;
-}
-
-.nav-bar ul li .animation-item {
+.container input+label .animation-item {
     height: 3px;
     background-color: greenyellow;
     width: 100%;
@@ -12,7 +8,7 @@
     visibility: hidden;
 }
 
-.nav-bar ul li:hover .animation-item {
+.container input+label:hover .animation-item {
     visibility: visible;
     animation-name: hover-underline;
     animation-duration: .5s;
@@ -89,21 +85,36 @@
 }
 
 /* TABS */
-
-#in-evidenza,
-#podcast,
-#classifiche,
-#generi,
-#new,
-#scopri {
+input {
     display: none;
 }
 
-.container #in-evidenza:target,
-.container #podcast:target,
-.container #classifiche:target,
-.container #generi:target,
-.container #new:target,
-.container #scopri:target {
+input+label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+
+input~.tab {
+    display: none
+}
+
+
+
+#podcast:checked~.tab.podcast,
+#classifiche:checked~.tab.classifiche,
+#generi:checked~.tab.generi,
+#new:checked~.tab.new,
+#scopri:checked~.tab.scopri,
+#home:checked~.tab.home {
     display: block;
+
+}
+
+input:checked+label .animation-item {
+    visibility: visible;
+}
+
+input:checked+label {
+    color: white;
 }
