@@ -412,7 +412,7 @@ li a {
 }
 
 .col-xs-1-2 {
-    width: calc(100%/2);
+    min-width: calc(100%/2);
 }
 
 
