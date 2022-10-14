@@ -412,7 +412,8 @@ li a {
 }
 
 .col-xs-1-2 {
-    min-width: calc(100%/2);
+    width: calc(100%/2);
+    flex-shrink: 0;
 }
 
 
@@ -433,6 +434,7 @@ li a {
 
 .circled {
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .overlay {
